@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 export default function Home() {
   const router = useRouter();
   useEffect(() => {
-    const isAuth = sessionStorage.getItem('helixtrack_auth');
+    const isAuth = sessionStorage.getItem('helitrex_auth');
     router.replace(isAuth ? '/inventory' : '/login');
   }, [router]);
   return null;

@@ -1,4 +1,4 @@
-# Helitrex — Pitch for Jasper
+# HelixTrack — Pitch for Jasper
 
 ## The Opportunity
 
@@ -27,74 +27,12 @@ All mock data, no backend — but the visual quality and interaction design demo
 
 4. **Custom-built** — Not a white-label or fork. Purpose-built for the use case, which means we can adapt to specific operator workflows rather than forcing a generic ERP.
 
-5. **Omnitrex platform** — If the client is already using or considering Omnitrex for GRC/compliance, Helitrex becomes a natural extension. One vendor, one login, one design system.
-
-## Technical Strategy
-
-### Architecture
-
-Helitrex is built on the same proven stack as Omnitrex GRC:
-
-| Layer | Technology | Notes |
-|-------|-----------|-------|
-| Frontend | Next.js 15 + React 19 + TypeScript | Static export for demo, SSR for production |
-| Backend | Supabase (PostgreSQL) | Managed database with built-in auth, storage, and real-time |
-| Hosting | Vercel + Supabase EU region | Swiss/EU data residency guaranteed |
-| Styling | Tailwind CSS 3 | Shared Omnitrex design system (cyan/slate dark theme) |
-
-### EASA Part-M Data Model
-
-The production database will model the full helicopter maintenance lifecycle:
-
-- **Parts lifecycle** — TSN (Time Since New), TSO (Time Since Overhaul), TBO (Time Between Overhaul) tracking with automated alerts at threshold percentages
-- **Document management** — ARC (Airworthiness Review Certificate), CRS (Certificate of Release to Service), work orders, and task cards
-- **AD/SB tracking** — Airworthiness Directives and Service Bulletins linked to affected aircraft and parts, with compliance status tracking
-- **Maintenance programs** — Operator-specific maintenance schedules per aircraft type, aligned with manufacturer recommendations and EASA requirements
-
-### Multi-Tenant Architecture
-
-- Row-Level Security (RLS) in PostgreSQL — each operator sees only their own data
-- Shared infrastructure keeps costs low; logical isolation keeps data secure
-- Single codebase serves all customers with operator-specific configuration
-
-### Integrations (Roadmap)
-
-- Export to CAMO (Continuing Airworthiness Management Organisation) systems
-- Potential EASA reporting APIs as they become available
-- CSV/PDF export for regulatory submissions and audits
-- REST API for Enterprise tier customers to integrate with existing tools
-
-### Security
-
-- TLS 1.3 in transit, AES-256 encryption at rest
-- Full audit trail on every data mutation (who changed what, when, and why)
-- Role-based access control (maintenance engineer, quality manager, accountable manager)
-- Automated backups with point-in-time recovery
-
-## Legal Strategy
-
-### Data Protection & Privacy
-
-- **Swiss FADP compliance** — The Swiss Federal Act on Data Protection (nFADP, effective Sept 2023) is equivalent to GDPR. Helitrex is designed to meet both frameworks.
-- **Data residency** — EU-only hosting via Vercel (Frankfurt) and Supabase EU region. Contractual guarantees that aviation records never leave EU/EEA jurisdiction.
-- **Data Processing Agreement (DPA)** — Standard DPA provided to all customers, covering aviation maintenance records as the data subject matter.
-
-### Aviation Regulatory Position
-
-- **EASA Part-M** — Helitrex operates as a maintenance record management system. It is **not** avionics software and does **not** require DO-178C certification.
-- **Competent authority acceptance** — The operator's CAMO must demonstrate to their NAA (e.g., FOCA in Switzerland) that their record-keeping system is adequate. Helitrex provides the audit trail, data integrity, and export capabilities to support this acceptance process.
-- **Liability** — Software disclaimers clarify that the operator remains solely responsible for airworthiness decisions. Helitrex is a tool for managing records and tracking maintenance, not a decision-making system.
-
-### Intellectual Property & Licensing
-
-- **Proprietary platform** — All source code is owned by Silente Labs GmbH
-- **BUSL-1.1 licensing** — Business Source License, consistent with the Omnitrex product family. Prevents competitors from self-hosting while allowing full SaaS access.
-- **Contract structure** — SaaS subscription with SLA (99.5% uptime for Professional, 99.9% for Enterprise), annual or monthly billing
+5. **Omnitrex platform** — If the client is already using or considering Omnitrex for GRC/compliance, HelixTrack becomes a natural extension. One vendor, one login, one design system.
 
 ## The Switzerland Angle
 
 - **Neutral jurisdiction** — Attractive for operators who work across borders (EASA member states)
-- **Strong aviation sector** — Pilatus, RUAG, Kopter (Leonardo), Marenco — ecosystem credibility
+- **Strong aviation sector** — Pilatus, RUAG, Kopter (Leonardo), Marenco → ecosystem credibility
 - **FOCA regulatory environment** — Swiss-specific compliance knowledge is a selling point
 - **Swiss quality perception** — Premium positioning aligns with premium pricing
 - **Data protection** — Swiss FADP (Federal Act on Data Protection) is GDPR-equivalent, reassuring for operators handling aircraft records

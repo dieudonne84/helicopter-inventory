@@ -8,7 +8,7 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const isAuth = sessionStorage.getItem('helixtrack_auth');
+    const isAuth = sessionStorage.getItem('helitrex_auth');
     if (!isAuth) {
       router.replace('/login');
     } else {

@@ -30,7 +30,7 @@ export default function LoginPage() {
     // Simulate network delay
     setTimeout(() => {
       if (email === VALID_EMAIL && password === VALID_PASSWORD) {
-        sessionStorage.setItem('helixtrack_auth', 'true');
+        sessionStorage.setItem('helitrex_auth', 'true');
         router.replace('/inventory');
       } else {
         setStatus('error');
@@ -54,7 +54,7 @@ export default function LoginPage() {
           <div className="inline-flex items-center gap-2.5">
             <Disc3 className="h-8 w-8 text-[#06b6d4] animate-[spin_8s_linear_infinite]" />
             <span className="text-3xl font-bold tracking-tight text-white">
-              Helix<span className="text-[#06b6d4]">Track</span>
+              Heli<span className="text-[#06b6d4]">trex</span>
             </span>
           </div>
           <p className="mt-2 text-xs text-slate-500 uppercase tracking-widest">
@@ -147,7 +147,7 @@ export default function LoginPage() {
 
         {/* Footer */}
         <p className="mt-6 text-center text-xs text-slate-600">
-          HelixTrack — Aviation Maintenance & Parts Tracking
+          Helitrex — Aviation Maintenance & Parts Tracking
         </p>
       </div>
     </div>

@@ -7,7 +7,7 @@ export function Header() {
   const router = useRouter();
 
   const handleLogout = () => {
-    sessionStorage.removeItem('helixtrack_auth');
+    sessionStorage.removeItem('helitrex_auth');
     router.replace('/login');
   };
 
@@ -19,7 +19,7 @@ export function Header() {
         </div>
         <div>
           <h1 className="text-base font-bold tracking-wide text-white">
-            Helix<span className="text-cyan-400">Track</span>
+            Heli<span className="text-cyan-400">trex</span>
           </h1>
         </div>
       </div>

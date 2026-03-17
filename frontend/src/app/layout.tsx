@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'HelixTrack — Helicopter Parts Inventory',
+  title: 'Helitrex — Helicopter Parts Inventory',
   description: 'Aviation maintenance and parts tracking platform',
 };
 

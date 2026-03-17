@@ -1,4 +1,4 @@
-# HelixTrack — AGENTS.md
+# Helitrex — AGENTS.md
 
 <!-- FORMAT RULES — DO NOT REMOVE
 This file follows the Omnitrex Harmonised AGENTS.md structure.
@@ -11,7 +11,7 @@ AI agents MUST preserve these exact sections when updating this file.
 
 ## Identity
 
-HelixTrack is a helicopter parts inventory and maintenance tracking platform. Purpose-built for aviation MRO (Maintenance, Repair & Overhaul) operators managing civilian helicopter fleets. Tracks part lifecycle (TSN/TSO/TBO), replacement scheduling, incoming orders, and full audit trail. Built on the Omnitrex platform.
+Helitrex is a helicopter parts inventory and maintenance tracking platform. Purpose-built for aviation MRO (Maintenance, Repair & Overhaul) operators managing civilian helicopter fleets. Tracks part lifecycle (TSN/TSO/TBO), replacement scheduling, incoming orders, and full audit trail. Built on the Omnitrex platform.
 
 - **Domain:** helicopter.omnitrex.eu
 - **Local folder:** `C:\Users\maxim\projects\helicopter-inventory\`
@@ -29,7 +29,7 @@ HelixTrack is a helicopter parts inventory and maintenance tracking platform. Pu
 | Icons | Lucide React | Consistent with Omnitrex platform |
 | Fonts | Inter + JetBrains Mono | Google Fonts CDN |
 | Hosting | Vercel (static) | helicopter.omnitrex.eu |
-| Dev port | 3050 | Port allocation: GRC 3000-3007, JobTopper 3010, Sliders 3030, Pyxel 3040-3041, HelixTrack 3050 |
+| Dev port | 3050 | Port allocation: GRC 3000-3007, JobTopper 3010, Sliders 3030, Pyxel 3040-3041, Helitrex 3050 |
 
 ### File Structure
 
