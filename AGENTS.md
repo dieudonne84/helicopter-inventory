@@ -13,7 +13,7 @@ AI agents MUST preserve these exact sections when updating this file.
 
 Helitrex is a helicopter parts inventory and maintenance tracking platform. Purpose-built for aviation MRO (Maintenance, Repair & Overhaul) operators managing civilian helicopter fleets. Tracks part lifecycle (TSN/TSO/TBO), replacement scheduling, incoming orders, and full audit trail. Built on the Omnitrex platform.
 
-- **Domain:** helicopter.omnitrex.eu
+- **Domain:** helitrex.omnitrex.eu
 - **Local folder:** `C:\Users\maxim\projects\helicopter-inventory\`
 - **Target market:** Swiss and European helicopter operators (EASA Part-M compliant operations)
 - **Current state:** Frontend demo shell — all mock data, no backend
@@ -28,7 +28,7 @@ Helitrex is a helicopter parts inventory and maintenance tracking platform. Purp
 | Styling | Tailwind CSS 3 | Omnitrex cyan/slate theme |
 | Icons | Lucide React | Consistent with Omnitrex platform |
 | Fonts | Inter + JetBrains Mono | Google Fonts CDN |
-| Hosting | Vercel (static) | helicopter.omnitrex.eu |
+| Hosting | Vercel (static) | helitrex.omnitrex.eu |
 | Dev port | 3050 | Port allocation: GRC 3000-3007, JobTopper 3010, Sliders 3030, Pyxel 3040-3041, Helitrex 3050 |
 
 ### File Structure
@@ -67,7 +67,7 @@ npm run build        # Static export to out/
 
 ## Status
 
-**Demo shell complete** — frontend-only, all mock data, deployed to helicopter.omnitrex.eu.
+**Demo shell complete** — frontend-only, all mock data, deployed to helitrex.omnitrex.eu.
 
 ### What Exists
 - Full 3-page interactive demo with Omnitrex visual identity

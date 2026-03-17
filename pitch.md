@@ -8,7 +8,7 @@ The Swiss helicopter market alone includes operators like Air Zermatt, Rega, Swi
 
 ## What We Built
 
-Live demo: **helicopter.omnitrex.eu**
+Live demo: **helitrex.omnitrex.eu**
 
 A fully interactive frontend demo showing:
 - **Parts inventory** — 54 realistic helicopter parts with full lifecycle tracking (TSN/TSO/TBO), searchable and sortable
@@ -132,7 +132,7 @@ The production database will model the full helicopter maintenance lifecycle:
 
 | Phase | Duration | Deliverable |
 |-------|----------|-------------|
-| Demo | Done | helicopter.omnitrex.eu |
+| Demo | Done | helitrex.omnitrex.eu |
 | Client meeting | 1-2 weeks | Requirements validation, interest confirmation |
 | Requirements | 6-8 weeks | Full spec covering Part-M compliance, data model, workflows |
 | MVP | 10-12 weeks | Working product with real data for 1 operator |
